@@ -22,6 +22,20 @@ OPHIM_BASE_URL=https://ophim1.com
 APP_LOG_LEVEL=INFO
 ```
 
+## Deploy to Render with Docker
+
+Create a new Render Web Service and choose Docker as the runtime. Render will
+build the included `Dockerfile` and provide the `PORT` environment variable
+automatically.
+
+Useful environment variables on Render:
+
+```dotenv
+CORS_ORIGINS=*
+OPHIM_BASE_URL=https://ophim1.com
+APP_LOG_LEVEL=INFO
+```
+
 ## Project structure
 
 ```text
